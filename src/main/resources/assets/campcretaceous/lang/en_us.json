@@ -1,0 +1,10 @@
+{
+  "item.campcretaceous.ankylosaurus_spawn_egg": "Ankylosaurus Spawn Egg",
+
+  "item.campcretaceous.raw_ankylosaurus": "Raw Ankylosaurus",
+  "item.campcretaceous.cooked_ankylosaurus": "Cooked Ankylosaurus",
+  "item.campcretaceous.ankylosaurus_scale": "Ankylosaurus Scales",
+
+  "entity.campcretaceous.anklyosaurus": "Ankylosaurus",
+  "creativetab.camp_cretaceous": "Camp Cretaceous!"
+}

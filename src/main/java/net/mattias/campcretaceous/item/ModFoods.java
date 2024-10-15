@@ -7,8 +7,8 @@ public class ModFoods {
 
 
       public static final FoodProperties RAW_ANKYLOSAURUS  = new FoodProperties.Builder().nutrition(1).fast()
-            .saturationMod(0.3f).build();
+            .saturationMod(1f).build();
 
     public static final FoodProperties COOKED_ANKYLOSAURUS  = new FoodProperties.Builder().nutrition(1).fast()
-            .saturationMod(0.7f).build();
+            .saturationMod(2f).build();
 }

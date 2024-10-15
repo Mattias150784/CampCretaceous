@@ -103,9 +103,8 @@ public class AnkylosaurusEntity extends Animal implements NeutralMob {
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
-        this.goalSelector.addGoal(2, new AnkylosaurusAttackGoal(this, 1.0D, true));
+        this.goalSelector.addGoal(3, new AnkylosaurusAttackGoal(this, 1.0D, true));
        this.targetSelector.addGoal(1,new HurtByTargetGoal(this));
-        this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.0, true));
         this.goalSelector.addGoal(2, new BreedGoal(this, 1.0D));
         this.goalSelector.addGoal(3, new TemptGoal(this, 1.2D, Ingredient.of(Items.APPLE, Items.CARROT, Items.WHEAT, Items.BEETROOT), false));
         this.goalSelector.addGoal(4, new FollowParentGoal(this, 1.1D));
@@ -117,7 +116,7 @@ public class AnkylosaurusEntity extends Animal implements NeutralMob {
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 40.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.6D)
+                .add(Attributes.MOVEMENT_SPEED, 0.2D)
                 .add(Attributes.ARMOR, 10.0D)
                 .add(Attributes.FOLLOW_RANGE, 16.0D)
                 .add(Attributes.ATTACK_DAMAGE, 3.0D);
